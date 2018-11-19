@@ -40,7 +40,8 @@
     imgView2.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:imgView2];
     
-    NSURL *url2 = [NSURL URLWithString:@"http://mseekimg.stbl.cc/app/out.webp"];
+//    NSURL *url2 = [NSURL URLWithString:@"http://mseekimg.stbl.cc/app/out.webp"];
+    NSURL *url2 = [NSURL URLWithString:@"http://pia2njyxv.bkt.clouddn.com/out.webp"];
     [imgView2 yy_setImageWithURL:url2 placeholder:nil];
     
     
