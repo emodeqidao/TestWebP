@@ -15,6 +15,8 @@
 		4E3D6386219E6C65002E0AA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D6385219E6C65002E0AA0 /* main.m */; };
 		4E3D6390219E6C65002E0AA0 /* TestWebPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D638F219E6C65002E0AA0 /* TestWebPTests.m */; };
 		4E3D639B219E6C65002E0AA0 /* TestWebPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D639A219E6C65002E0AA0 /* TestWebPUITests.m */; };
+		4E70520421B0398A000964A4 /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E70520221B0398A000964A4 /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4E7054C521B03F3F000964A4 /* libTestSingleSourceBuild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7054C421B03F3F000964A4 /* libTestSingleSourceBuild.a */; };
 		BE031AEDE5BB812C367868E3 /* libPods-TestWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9836D76DC3BE5D169713783B /* libPods-TestWebP.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		4E3D6396219E6C65002E0AA0 /* TestWebPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWebPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D639A219E6C65002E0AA0 /* TestWebPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWebPUITests.m; sourceTree = "<group>"; };
 		4E3D639C219E6C65002E0AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E70520221B0398A000964A4 /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
+		4E70520321B0398A000964A4 /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		4E7054C421B03F3F000964A4 /* libTestSingleSourceBuild.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestSingleSourceBuild.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9836D76DC3BE5D169713783B /* libPods-TestWebP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestWebP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76C12273FD888FB495DA4B3 /* Pods-TestWebP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWebP/Pods-TestWebP.debug.xcconfig"; sourceTree = "<group>"; };
 		CFC25C8D259FCB194A5A0E89 /* Pods-TestWebP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWebP.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWebP/Pods-TestWebP.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7054C521B03F3F000964A4 /* libTestSingleSourceBuild.a in Frameworks */,
 				BE031AEDE5BB812C367868E3 /* libPods-TestWebP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		2A0370EEEFE35124A0EC0970 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E7054C421B03F3F000964A4 /* libTestSingleSourceBuild.a */,
 				9836D76DC3BE5D169713783B /* libPods-TestWebP.a */,
 			);
 			name = Frameworks;
@@ -125,6 +132,7 @@
 		4E3D6375219E6C63002E0AA0 /* TestWebP */ = {
 			isa = PBXGroup;
 			children = (
+				4E7051FD21B03785000964A4 /* Gen */,
 				4E3D6376219E6C63002E0AA0 /* AppDelegate.h */,
 				4E3D6377219E6C63002E0AA0 /* AppDelegate.m */,
 				4E3D6379219E6C63002E0AA0 /* ViewController.h */,
@@ -154,6 +162,15 @@
 				4E3D639C219E6C65002E0AA0 /* Info.plist */,
 			);
 			path = TestWebPUITests;
+			sourceTree = "<group>";
+		};
+		4E7051FD21B03785000964A4 /* Gen */ = {
+			isa = PBXGroup;
+			children = (
+				4E70520321B0398A000964A4 /* Person.pbobjc.h */,
+				4E70520221B0398A000964A4 /* Person.pbobjc.m */,
+			);
+			path = Gen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +328,7 @@
 				4E3D637B219E6C63002E0AA0 /* ViewController.m in Sources */,
 				4E3D6386219E6C65002E0AA0 /* main.m in Sources */,
 				4E3D6378219E6C63002E0AA0 /* AppDelegate.m in Sources */,
+				4E70520421B0398A000964A4 /* Person.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +502,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AA3KVQQ338;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYWebImage\"",
+					"$(PROJECT)/ProtocolBuffer",
+				);
 				INFOPLIST_FILE = TestWebP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +517,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xixi.TestWebP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "$(PROJECT)/ProtocolBuffer";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -502,6 +530,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AA3KVQQ338;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/YYCache\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYWebImage\"",
+					"$(PROJECT)/ProtocolBuffer",
+				);
 				INFOPLIST_FILE = TestWebP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,6 +545,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xixi.TestWebP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "$(PROJECT)/ProtocolBuffer";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
